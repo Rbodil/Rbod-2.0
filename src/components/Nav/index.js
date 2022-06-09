@@ -1,29 +1,36 @@
-import { Link } from 'react-router-dom';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
 
-function Nav(props){
+
+function Nav({setWhale}){
     
 
     return(
-        <header>
+        <div className='bg-primary flex-row items-center space-between mx-auto px-2 py-2 text-secondary '>
             <h2>
-                <a data-testid="link" href="/">Reagan Bodily</a>
+                <a data-testid="link" onClick={()=> setWhale('/')}>Reagan Bodily</a>
             </h2>
-            <nav>
+            <nav >
                 <ul className='flex-row'>
-                    <li className='mx-2'>
-                        <a data-testid="about" href="#about" onClick={pageHandler}>
+                    <li className='mx-4'>
+                        <a data-testid="about" onClick={()=> setWhale('/about')}>
                             About Me
+                        </a>
+                    </li>
+                    <li className='mx-4'>
+                        <a data-testid="message" onClick={()=> setWhale('/message')}>
+                            Message
+                        </a>
+                    </li>
+                    <li className='mx-4'>
+                        <a data-testid="projects" onClick={()=> setWhale('/projects')}>
+                            Projects
                         </a>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
     )
-});
+};
 
-function pageHandler(){
-    
-}
 
 export default Nav;

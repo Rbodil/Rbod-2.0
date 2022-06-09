@@ -1,16 +1,44 @@
+import React, { useState } from 'react';
+
 import './App.css';
+import Home from './components/Home';
+import Nav from './components/Nav';
+import About from './components/About';
+import Message from './components/Message';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+
 
 function App() {
+
+  const [page, setPage] = useState('/');
+
+
+  function pageSwitch() {
+    switch (page) {
+      case '/':
+        return <Home />;
+      case '/about':
+        return <About />;
+      case '/message':
+        return <Message />
+      case '/projects':
+        return <Projects />
+      default:
+        return <Home />;
+    }
+  }
+
   return (
     <div>
       <header>
-        {/* nav */}
+        <Nav setWhale={setPage} />
       </header>
-      <main>
-        {/* about, message, projects */}
+      <main className='bg-dark text-tertiary mx-auto flex-row justify-center'>
+        {pageSwitch()}
       </main>
-      <footer>
-        {/* contact */}
+      <footer className='bg-primary flex-row text-secondary fixed bottom-0 mx-auto py-2 w-full justify-center'>
+        <Contact />
       </footer>
     </div>
   );

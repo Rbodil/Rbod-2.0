@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav(props) {
-    
+
+function Projects(props) {
+    // make repo card component, make tiles set classname to Card 
 
     return (
+        <div>
+            <h2>Projects</h2>
+        </div>
         
     )
 }
+
+export default Projects;
