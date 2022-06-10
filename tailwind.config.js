@@ -6,7 +6,8 @@ module.exports = {
     "./src/components/Message/index.js",
     "./src/components/Contact/index.js",
     "./src/components/Project/index.js",
-    "./src/App.js"
+    "./src/App.js",
+    './src/index.js'
   ],
   theme: {
     screens: {
