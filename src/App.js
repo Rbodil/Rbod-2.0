@@ -34,7 +34,7 @@ function App() {
       <header>
         <Nav setWhale={setPage} />
       </header>
-      <main className='bg-dark text-tertiary mx-auto flex-row justify-center'>
+      <main className='bg-dark text-tertiary mx-auto flex-row justify-center w-full mb-25 sm:mb-0'>
         {pageSwitch()}
       </main>
       <footer className='bg-primary flex-row text-secondary fixed bottom-0 mx-auto py-2 w-full justify-center'>
