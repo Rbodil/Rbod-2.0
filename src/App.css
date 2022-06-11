@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 main {
   margin: 0 auto;
@@ -9,10 +9,12 @@ main {
   height: 100%;
   
 }
+
 :root {
   --primary: #253031;
-  --secondary: #315659;
+  --secondary: #5ca0a5;
   --tertiary: #2978a0;
+  --four: #0676ad;
   --light: #fffff;
   --dark: #000000;
   --darker: #111111;
@@ -138,6 +140,12 @@ textarea {
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
+}
+
+.card{
+  max-height: 150px;
+  background-color: #000000;
+  opacity: 0.5;
 }
 
 .container {

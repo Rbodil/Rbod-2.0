@@ -3,14 +3,15 @@ import resume from './Resume-2022.pdf'
 
 function Home() {
     return (
-        <div className="mx-auto p-3 text-center">
-            <div className="">
-                <h1 >Welcome to my webpage!</h1>
+        <div className="m-auto text-center flex-column">
+            <div>
+                <h1 className="text-7xl text-tertiary bg-dark p-2 rounded-md">Welcome to my webpage!</h1>
             </div>
             <p>update the resume in your anchor tag you asshole</p>
-            <div>
-                <a className="text-secondary" target="_blank" rel='resume' href={resume}>
-                    <h3>Take a look at my Resume</h3></a>
+            <div className="w-100 flex-row justify-center">
+                <a className="text-tertiary" target="_blank" rel='noreferrer' href={resume}>
+                    <h3 className="bg-dark p-2 rounded-md" >Take a look at my Resume</h3>
+                </a>
             </div>
         </div>
     )

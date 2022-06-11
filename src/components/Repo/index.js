@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Repo(props) {
 
 
@@ -11,7 +12,7 @@ function Repo(props) {
                 <div className="border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                     <div className="mb-8">
                         <img
-                            src={require(`../../assets/${props.image}.jpg`).default}
+                            src={props.image}
                             alt={props.image}
                             className="img-thumbnail mx-1"
                             key={props.image}
