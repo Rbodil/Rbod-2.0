@@ -1,33 +1,34 @@
 import React from "react";
 
 
-function Repo(props) {
 
+function Repo(props) {
+    /*{props.image} target='_blank' rel='nonreferrer' href={props.shit} {props.tech} {props.title} {props.description}
+    
+
+    */
 
     return (
-        <div className="p-10" target='_blank' rel='nonreferrer' href={props.shit}>
-            <div className=" w-full lg:max-w-full lg:flex">
-                <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                </div>
-                <div className="border-r border-b border-l lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                    <div className="mb-8">
-                        <img
-                            src={props.image}
-                            alt={props.image}
-                            className="img-thumbnail mx-1"
-                            key={props.image}
-                        />
-                        <div className="font-bold text-xl mb-2">{props.title}</div>
-                        <p>{props.description}</p>
-                    </div>
-                    <div className="flex items-center pb-2">
-                        <div className="text-sm">
-                            <p>{props.tech}</p>
-                        </div>
-                    </div>
-                </div>
+        <div className="flex-row space-around w-3/5 bg-primary my-2 px-10 text-center">
+            <div className="p-2">
+                <img
+                    className="img-thumbnail"
+                    title={props.image}
+                    src={props.image}
+                    alt={props.image}
+                    key={props.image}
+                    target='_blank' rel='nonreferrer' href={props.shit}
+                ></img>
+            </div>
+            <div className="mx-auto">
+                <h2>{props.title}</h2>
+                <p>{props.description}</p>
+                <p>{props.tech}</p>
             </div>
         </div>
+
+
+
     )
 }
 

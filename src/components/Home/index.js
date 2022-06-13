@@ -5,12 +5,12 @@ function Home() {
     return (
         <div className="m-auto text-center flex-column">
             <div>
-                <h1 className="text-7xl text-tertiary bg-dark p-2 rounded-md">Welcome to my webpage!</h1>
+                <h1 className="text-md sm:text-7xl text-light">Welcome to My Portfolio!</h1>
             </div>
-            <p>update the resume in your anchor tag you asshole</p>
+            {/* <p>update the resume in your anchor tag you asshole</p> */}
             <div className="w-100 flex-row justify-center">
-                <a className="text-tertiary" target="_blank" rel='noreferrer' href={resume}>
-                    <h3 className="bg-dark p-2 rounded-md" >Take a look at my Resume</h3>
+                <a className="text-light" target="_blank" rel='noreferrer' href={resume}>
+                    <h3 className="text-tertiary" >Take a look at my Resume</h3>
                 </a>
             </div>
         </div>

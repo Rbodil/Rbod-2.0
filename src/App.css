@@ -4,10 +4,10 @@
 
 main {
   margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 30px;
+  max-width: 100%;
   height: 100%;
-  
+  background-color: #000000;
+  opacity: .8;
 }
 
 :root {
@@ -15,7 +15,7 @@ main {
   --secondary: #5ca0a5;
   --tertiary: #2978a0;
   --four: #0676ad;
-  --light: #fffff;
+  --light: #ffffff;
   --dark: #000000;
   --darker: #111111;
   --error: #f34832;
@@ -31,6 +31,13 @@ main {
 html,
 body {
   min-height: 100%;
+  min-width: 100%;
+  background: url('./assets/cenote.jpg')no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  opacity: 1;
+  background-size: fixed;
 }
 
 body {
@@ -40,7 +47,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  
   color: var(--light);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
@@ -97,7 +103,7 @@ a:hover {
 }
 
 header a {
-  color: var(--light);
+  color: var(--secondary);
 }
 
 button:hover {
@@ -116,6 +122,12 @@ img {
 form {
   width: 40%;
 }
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
 
 input {
   font-size: 1rem;
@@ -140,12 +152,6 @@ textarea {
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
-}
-
-.card{
-  max-height: 150px;
-  background-color: #000000;
-  opacity: 0.5;
 }
 
 .container {
@@ -214,14 +220,26 @@ textarea {
 }
 
 .card {
-  width: 25%;
-  text-align: center;
+  padding: 25px;
+  height:auto;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  opacity: 1;
+  margin: 5px;
+}
+
+.card p {
+  font-size: 0.65rem;
+  font-weight: 200;
+  width: fit-content;
 }
 
 .img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+  width:fit-content;
+  height: 100px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 

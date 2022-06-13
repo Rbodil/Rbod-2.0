@@ -36,18 +36,19 @@ function Message(props) {
     };
 
     return (
-        <section className='flex-column mx-auto w-7/12 justify-items-center'>
+        <section className='text-light w-full justify-center p-4 text-center form '>
+            <form className='justify-center' id="contact-form" onSubmit={handleSubmit}>
             <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div className='py-1'>
+            <br></br>
+                <div className='py-1 flex-row'>
                     <label htmlFor="name">Name:</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                 </div>
-                <div className='py-1'>
+                <div className='py-1 flex-row'>
                     <label htmlFor="email">Email address:</label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
-                <div className='py-1'>
+                <div className='py-1 flex-row'>
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
@@ -56,7 +57,10 @@ function Message(props) {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button className='bg-tertiary' data-testid="button" type="submit">Submit</button>
+                <div className='flex-row w-full'>
+                  <button className='bg-four' data-testid="button" type="submit">Submit</button>  
+                </div>
+                
             </form>
         </section>
 

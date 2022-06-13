@@ -6,8 +6,15 @@ import About from './components/About';
 import Message from './components/Message';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import background from './assets/cenote.jpg'
+// import background from './assets/cenote.jpg';
 
+/* className="bg-fixed bg-no-repeat bg-center bg-cover" style={{background-image: `url(${background})`}}
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  opacity: 1;
+  background-size: fixed;*/
 
 function App() {
 
@@ -30,14 +37,14 @@ function App() {
   }
 
   return (
-    <div className='w-screen h-screen bg-scroll bg-cover' style={{backgroundImage: `url(${background})`}}>
-      <header>
+    <div className='w-screen h-screen'>
+      <header className='sticky'>
         <Nav setWhale={setPage} />
       </header>
-      <main className='text-tertiary mx-auto flex-row justify-center w-full h-full pb-3'>
+      <main className='mx-auto flex-row justify-center w-full h-full pb-[350px] overflow-scroll'>
         {pageSwitch()}
       </main>
-      <footer className='bg-primary flex-row w-full justify-center pt-2 pb-1 shrink mb-0'>
+      <footer className='bg-primary w-screen flex-row justify-center pt-2 pb-1 shrink bottom-0 fixed z-0'>
         <Contact />
       </footer>
     </div>

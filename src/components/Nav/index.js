@@ -6,11 +6,11 @@ function Nav({setWhale}){
 
     return(
         <div className='bg-primary flex-row items-center space-between mx-auto px-2 py-2 text-secondary shrink'>
-            <h3>
+            <h3 className='pl-2 sm:pl-1'>
                 <a data-testid="link" onClick={()=> setWhale('/')}>Reagan Bodily</a>
             </h3>
             <nav>
-                <ul className='flex-row'>
+                <ul className='flex-row pr-2 sm:pr-1 sm:flex-column'>
                     <li className='mx-4 text-xl sm:text-lg'>
                         <a data-testid="about" onClick={()=> setWhale('/about')}>
                             About Me
