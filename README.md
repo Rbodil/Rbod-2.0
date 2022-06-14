@@ -22,7 +22,7 @@
 
   ## Usage
   
-  Explore!!
+  Explore https://rbodil.github.io/Rbod-2.0/!!
   
   ## Contributing
 
