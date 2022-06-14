@@ -6,15 +6,7 @@ import About from './components/About';
 import Message from './components/Message';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-// import background from './assets/cenote.jpg';
 
-/* className="bg-fixed bg-no-repeat bg-center bg-cover" style={{background-image: `url(${background})`}}
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  opacity: 1;
-  background-size: fixed;*/
 
 function App() {
 

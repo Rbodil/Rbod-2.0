@@ -3,30 +3,23 @@ import React from "react";
 
 
 function Repo(props) {
-    /*{props.image} target='_blank' rel='nonreferrer' href={props.shit} {props.tech} {props.title} {props.description}
-    
-
-    */
-
     return (
-        <div className="flex-row space-around w-3/5 bg-primary my-2 px-10 text-center">
-            <div className="p-2">
-                <img
-                    className="img-thumbnail"
-                    title={props.image}
-                    src={props.image}
-                    alt={props.image}
-                    key={props.image}
-                    target='_blank' rel='nonreferrer' href={props.shit}
-                ></img>
-            </div>
-            <div className="mx-auto">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-                <p>{props.tech}</p>
-            </div>
-        </div>
 
+        <>
+            <div className="rounded-2xl bg-primary flex-column text-center justify-center px-6 mx-4 w-2/4" target='_blank' rel='nonreferrer' href={props.shit}>
+                <div className="container rounded-2xl">
+                    <div className="mt-1 py-1">
+                        <h2 className="text-5xl font-semibold text-tertiary md:text-xl">{props.title}</h2>
+                    </div>
+                    <div>
+                        <div className="w-full pb-1">
+                            <p className="text-secondary text-sm">{props.description}</p>
+                            <p className="text-light text-sm">{props.tech}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
 
 
     )

@@ -47,7 +47,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  color: var(--light);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
@@ -219,29 +218,16 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  padding: 25px;
-  height:auto;
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary);
-  opacity: 1;
-  margin: 5px;
-}
-
-.card p {
-  font-size: 0.65rem;
-  font-weight: 200;
-  width: fit-content;
-}
-
 .img-thumbnail {
-  width:fit-content;
-  height: 100px;
-  margin-bottom: 8px;
-  cursor: pointer;
+  padding-top: 15px;
+  margin-bottom: 0;
+  height:250px;
+  width: auto;
+  border-radius: 15px;
+  object-fit: contain;
+
 }
+/* max-h-60 w-auto */
 
 button {
   background: var(--primary);
@@ -256,12 +242,7 @@ button {
 }
 
 a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
   padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
 }
 
 .navActive {
