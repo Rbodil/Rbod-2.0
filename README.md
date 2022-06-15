@@ -4,21 +4,21 @@
       
     This product is covered under the MIT license.
     
+   
+    
 
   ## Description:
   
   My updated professional portfolio built using React and Tailwind
 
   ## Table of Contents:
-  - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
+ ![portfolio demo](./src/assets/screenshot.gif)
 
-  No installation needed
 
   ## Usage
   
