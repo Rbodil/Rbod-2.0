@@ -9,7 +9,7 @@ function Repo(props) {
             <div className="rounded-2xl bg-primary flex-column text-center justify-center px-6 mx-4 w-2/4" target='_blank' rel='nonreferrer' href={props.shit}>
                 <div className="container rounded-2xl">
                     <div className="mt-1 py-1">
-                        <h2 className="text-5xl font-semibold text-tertiary md:text-xl">{props.title}</h2>
+                        <a target='_blank' rel='nonreferrer' href={props.shit}><h2 className="text-5xl font-semibold text-tertiary md:text-xl" >{props.title}</h2></a>
                     </div>
                     <div>
                         <div className="w-full pb-1">
