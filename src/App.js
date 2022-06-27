@@ -33,7 +33,7 @@ function App() {
       <header className='sticky'>
         <Nav setWhale={setPage} />
       </header>
-      <main className='mx-auto flex-row justify-center w-full h-full pb-[350px] overflow-scroll'>
+      <main className='mx-auto flex-row justify-center w-full h-full pb-[350px] overflow-scroll overflow-x-hidden'>
         {pageSwitch()}
       </main>
       <footer className='bg-primary w-screen flex-row justify-center pt-2 pb-1 shrink bottom-0 fixed z-0'>
