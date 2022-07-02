@@ -1,5 +1,5 @@
 import React from 'react';
-
+import photo from '../../assets/family-photo4.jpg'
 
 function About(props) {
 
@@ -8,6 +8,7 @@ function About(props) {
         <section className='text-light flex-column w-full justify-center p-4 text-center'>
             <div className='w-fit px-1 text-center mx-auto'>
             <h1 classname="justify-self-end py-2">About Me</h1>
+            <img src={photo}></img>
             </div>
             
             <br></br>
