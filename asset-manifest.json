@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Rbod-2.0/static/css/main.2d66c64f.css",
+    "main.js": "/Rbod-2.0/static/js/main.98808b3d.js",
+    "static/js/787.650cd222.chunk.js": "/Rbod-2.0/static/js/787.650cd222.chunk.js",
+    "static/media/cenote.jpg": "/Rbod-2.0/static/media/cenote.25cd4d4ea274a18b6740.jpg",
+    "static/media/Resume-2022.pdf": "/Rbod-2.0/static/media/Resume-2022.158f72defd2b57e3d870.pdf",
+    "static/media/family-photo4.jpg": "/Rbod-2.0/static/media/family-photo4.beebfa347e7bdc022ff0.jpg",
+    "index.html": "/Rbod-2.0/index.html",
+    "main.2d66c64f.css.map": "/Rbod-2.0/static/css/main.2d66c64f.css.map",
+    "main.98808b3d.js.map": "/Rbod-2.0/static/js/main.98808b3d.js.map",
+    "787.650cd222.chunk.js.map": "/Rbod-2.0/static/js/787.650cd222.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d66c64f.css",
+    "static/js/main.98808b3d.js"
+  ]
+}
